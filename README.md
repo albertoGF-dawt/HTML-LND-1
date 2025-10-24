@@ -16,7 +16,7 @@ Stylesheet made for customizations
 ```
 # acknowlegment
 Special thanks to David by helping me to made the Javascript partç
-# authos
+# author
 Alberto Guerra
 
 # inspiration 
