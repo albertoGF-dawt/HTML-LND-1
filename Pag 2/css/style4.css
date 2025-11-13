@@ -1,0 +1,112 @@
+body {
+  background-image: url(https://imgs.search.brave.com/V-nnXFJQqMdsDXot5Yd1MDsNzaUTNWjsNpJpHP0lLWY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Zm9uZGVjcmFudmlw/LmNvbS8yMDI1LzAz/LzVRdkRnRHc5LWZv/bmQtZGVjcmFuLU5v/aXItZXQtYmxhbmMt/ODAud2VicA);
+  background-size: cover;
+}
+
+
+.main-font {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.349);
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 200vh;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 80px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+  /* border: 5px solid darkcyan;
+    border-radius: 20px; */
+}
+
+body {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+#Index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(253, 253, 253, 0.9);
+  border: 5px solid darkcyan;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+#suggestion-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#suggestion-box input,
+#suggestion-box textarea {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#other-suggestions {
+  text-shadow: #000 1px 1px 2px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.603);
+  border-radius: 15px;
+  width: 80%;
+  border: darkcyan 5px solid;
+}
+
+#suggestion-box button {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#error-username-required,
+#error-suggestion-required, #error-email-invalid,
+#error-password-required {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+#suggestion-box label {
+color: rgb(12, 9, 59);
+}

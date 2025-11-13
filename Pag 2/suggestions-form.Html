@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas en Web</title>
+  <link rel="stylesheet" href="css/style4.css">
+</head>
+
+<body>
+  <div>
+    <div class="main-font">
+
+      <div class="topbar">
+        <a id="Index" href="Index.Html">volver</a>
+      </div>
+      <div class="main-box">
+        <section>
+          <form id="suggestion-box">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" placeholder="username">
+            <span id="error-username-required">El campo de nombre de usuario está vacío.</span>
+
+            <label for="suggestion">Sugerencia</label>
+            <input type="text" id="suggestion" name="suggestion" placeholder="sugerencia">
+            <span id="error-suggestion-required">El campo de sugerencia está vacío.</span>
+            
+            <label for="email">email (esto no se mostrará)</label>
+            <input type="text" id="email" name="email" placeholder="email">
+            <span id="error-email-invalid">El correo electrónico no es válido.</span>
+
+            <label for="password">password (esto no se mostrará)</label>
+            <input type="password" id="password" name="password" placeholder="password">
+            <span id="error-password-required">El campo de contraseña está vacío.</span>
+           
+            <button type="submit" id="submit">Enviar</button>
+          </form>
+        </section>
+        <section id="other-suggestions">
+          <h2>other suggestions</h2>
+          <div>
+            <ul id="suggestions-list">
+
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="js/script2.js"></script>
+</body>

@@ -10,6 +10,17 @@ body {
   background-size: cover;
 }
 
+header {
+  margin: 20px auto;
+  padding: 10px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* --- Header --- */
 #topbar {
   display: flex;
@@ -19,52 +30,83 @@ body {
   border-radius: 20px;
 }
 
-/* buscaor de notas */
-#topbar input {
+/* buscador de notas */
+#find {
   padding: 5px;
   border-radius: 20px;
   border: 2px solid darkgray;
   width: 200px;
+  display: flex;
 }
 
 /* Login box */
+
+/* --- Login box --- */
 .login {
-  background-color: white;
-  border: 2px solid darkcyan;
-  border-radius: 20px;
-  color: darkcyan;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 30px;
+  margin-top: 15px;
+  overflow: visible;
+}
+
+/* Botón de login con efecto hover */
+#login-button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  padding: 0 10px;
-  gap: 5px;
-}
-
-/* Texto del login */
-.login h2 {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-/* Boton de login */
-#btnTopbar {
-  background-color: white;
-  border: 2px solid darkcyan;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0f172a;
+  border: none;
+  border-radius: 14px;
   cursor: pointer;
-  padding: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
 }
+
+/* Escala ligera al pasar el mouse */
+#login-button:hover {
+  transform: scale(1.05);
+}
+
+/* Efecto de borde degradado al pasar el mouse */
+#login-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 2px;
+  background: linear-gradient(90deg, #2dd4bf, #3b82f6, #7c3aed);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#login-button:hover::before {
+  opacity: 1;
+}
+
+
+
 
 /*Contenedor principal*/
-#main_font {
+#main-font {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   margin: 10px auto;
@@ -113,8 +155,8 @@ body {
 /* titulo */
 #main_content h1 {
   background-color: rgba(255, 255, 255, 0.5);
-  border: 5px double darkcyan;
   border-radius: 20px;
+  border: darkcyan 5px solid;
   width: 90%;
   padding: 10px;
   text-align: center;
@@ -140,22 +182,7 @@ body {
   background-color: white;
   cursor: pointer;
   font-size: 16px;
-  margin-bottom: 20px;
-}
-
-/* notas antiguas */
-.old_notes {
-  width: 90%;
-  max-height: 300px;
-  background-color: white;
-  border: 2px dotted darkcyan;
-  border-radius: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  overflow-y: auto;
-  margin-top: 300px;
+  margin-bottom: 500px;
 }
 
 /* Footer */
@@ -214,4 +241,52 @@ footer a {
 
 .sidebar img#agendaIcon {
   cursor: pointer;
+}
+
+.photos-link {
+  background-color: rgb(253, 253, 253);
+  backdrop-filter: blur(10px);
+  border: 5px solid darkcyan;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+.old-notes {
+  background-color: rgba(253, 253, 253, 0.308);
+  backdrop-filter: blur(10px);
+  border: 5px solid darkcyan;
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 90%;
+  height: auto;
+}
+
+.suggestion {
+  background-color: rgb(253, 253, 253);
+  backdrop-filter: blur(10px);
+  border: 5px solid darkcyan;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
 }
