@@ -3,16 +3,14 @@ this webpage is made for you to make your notes Online and make your live eassie
 # getting started
 this webpage is made for those who does have a lot of things on mind
 ```html
-Stylesheet made for customizations
-<topbar> contains important basic uses of the page (non functional right now)
-<login> now is a placeholder until we finish making login sistem
-<input id=find> made for those who make a lot of notes and have troubles finding those
-<main_font>made to contain everithing in a container
-<sidebar>made for the shortcuts in the web
-<main_content>made to contain the most important part of the webpage
-<input id=note>The main concept of the webpage
-<old_notes>to the regist of the notes
-<footer> to contain information about marks or social medias of the enterprise
+Index.html remains of js/script.js and css/style.css and is made for the main part of the page
+login.html is made for login in (right now is not working) it depends of css/style2.css
+photos.html is made to contain 10 photos with a hover effect it depends of css/style3.css
+suggestion-form is a form made to the users to share their opinions by writting their names, suggestion, email and password of the webpage it  depends of js/script2.js and css/style4.css
+
+
+
+
 ```
 # acknowlegment
 Special thanks to David by helping me to made the Javascript partç
