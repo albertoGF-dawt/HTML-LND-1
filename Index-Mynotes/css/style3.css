@@ -1,0 +1,81 @@
+.main-font {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.349);
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 200vh;
+  height: 100%;
+  border-radius: 15px;
+}
+
+body {
+  background-image: url(https://imgs.search.brave.com/V-nnXFJQqMdsDXot5Yd1MDsNzaUTNWjsNpJpHP0lLWY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Zm9uZGVjcmFudmlw/LmNvbS8yMDI1LzAz/LzVRdkRnRHc5LWZv/bmQtZGVjcmFuLU5v/aXItZXQtYmxhbmMt/ODAud2VicA);
+  background-size: cover;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 80px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+  /* border: 5px solid darkcyan;
+    border-radius: 20px; */
+}
+
+body {
+  margin: 0;
+  /* background: #111; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.photo-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 90vw;
+  height: 95%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.photo-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+#Index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(253, 253, 253, 0.9);
+  border: 5px solid darkcyan;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
