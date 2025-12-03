@@ -1,0 +1,444 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+
+body {
+  background-image: url(https://imgs.search.brave.com/V-nnXFJQqMdsDXot5Yd1MDsNzaUTNWjsNpJpHP0lLWY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Zm9uZGVjcmFudmlw/LmNvbS8yMDI1LzAz/LzVRdkRnRHc5LWZv/bmQtZGVjcmFuLU5v/aXItZXQtYmxhbmMt/ODAud2VicA);
+  background-size: cover;
+}
+
+header {
+  margin: 20px auto;
+  padding: 10px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- Header --- */
+#topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* buscador de notas */
+#find {
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid darkgray;
+  width: 200px;
+  display: flex;
+}
+
+/* Login box */
+
+/* --- Login box --- */
+.login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 30px;
+  margin-top: 15px;
+  overflow: visible;
+}
+
+/* Botón de login con efecto hover */
+#login-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0f172a;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* Escala ligera al pasar el mouse */
+#login-button:hover {
+  transform: scale(1.05);
+}
+
+/* Efecto de borde degradado al pasar el mouse */
+#login-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 2px;
+  background: linear-gradient(90deg, #2dd4bf, #3b82f6, #7c3aed);
+  -webkit-mask:
+    linear-gradient(#fff, #fff) content-box,
+    linear-gradient(#fff, #fff);
+  mask:
+    linear-gradient(#fff, #fff) content-box;
+  mask-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(#fff, #fff);
+  mask-mode: match-source, match-source;
+  mask-origin: content-box, border-box;
+  mask-clip: content-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#login-button:hover::before {
+  opacity: 1;
+}
+
+
+
+
+/*Contenedor principal*/
+#main-font {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  height: auto;
+  width: 95%;
+}
+
+
+/* barra lateral */
+#sidebar {
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 5px;
+
+  position: sticky;
+  top: 10px;
+  align-self: flex-start;
+  height: fit-content;
+
+}
+
+#sidebar img {
+  width: 80px;
+  height: 80px;
+}
+
+
+/* Main content */
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+}
+
+/* titulo */
+#main-content h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  border: darkcyan 5px solid;
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: mainContentH1 2s;
+}
+
+@keyframes mainContentH1 {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    text-shadow: 0 0 0 #000;
+  }
+}
+
+/* texto de las notas */
+#main-content input#note {
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 5px solid darkcyan;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/* boton agregar nota */
+#addNote {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 3px solid darkcyan;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 500px;
+}
+
+#addNote:hover {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 3px groove darkcyan;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 500px;
+}
+
+/* Footer */
+footer {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer a {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #topbar {
+    flex-direction: column;
+  }
+
+  #main_font {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #sidebar {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #topbar input {
+    width: 90%;
+    margin-top: 5px;
+    position: sticky;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    position: sticky;
+  }
+}
+
+.sidebar img#Sintítulo-1.png {
+  cursor: pointer;
+}
+
+.sidebar img#agendaIcon {
+  cursor: pointer;
+}
+
+.photos-link {
+  background-color: rgb(253, 253, 253);
+  backdrop-filter: blur(10px);
+  border: 5px solid darkcyan;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+.photos-link:hover {
+  background-color: rgb(253, 253, 253);
+  backdrop-filter: blur(10px);
+  border: 5px solid rgb(0, 77, 77);
+  ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+.old-notes {
+  background-color: rgba(253, 253, 253, 0.308);
+  backdrop-filter: blur(10px);
+  border: 5px solid darkcyan;
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 90%;
+  height: auto;
+  margin-bottom: 200px;
+
+  animation: old-notes-appears linear both;
+  animation-timeline: scroll();
+  animation-range: 50% 60%;
+
+}
+
+@keyframes old-notes-appears {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.suggestion {
+  background-color: rgb(253, 253, 253);
+  backdrop-filter: blur(10px);
+  border: 5px solid darkcyan;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+.suggestion:hover {
+  background-color: rgb(253, 253, 253);
+  backdrop-filter: blur(10px);
+  border: 5px solid rgb(0, 77, 77);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+#Index {
+  background: white;
+  border: 4px solid darkcyan;
+  border-radius: 10px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#Index:hover {
+  background-color: rgb(253, 253, 253);
+  backdrop-filter: blur(10px);
+  border: 5px solid rgb(0, 77, 77);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.note-item {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn-edit {
+  margin-right: 10px;
+  border: 2px solid darkcyan;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background: white;
+  transition: transform 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.btn-delete {
+  border: 2px solid darkcyan;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background: white;
+  transition: transform 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.btn-edit:hover {
+  background: white;
+  color: blue;
+  border-color: blue;
+  transform: scale(1.2);
+}
+
+.btn-delete:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: rgb(220, 53, 69);
+  transform: scale(1.2);
+}
+
+#Username {
+  background: white;
+  border: 4px solid darkcyan;
+  border-radius: 10px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
